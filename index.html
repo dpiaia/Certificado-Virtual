@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="certificado.css"></link>
+	<title></title>
+	<script type="text/javascript">	
+		alert ("Bem vindo ao teste de Diploma para eventos do Superlógica Lab");
+		var curso = prompt("Escreva o nome completo do CURSO que deseja gerar o certificado");
+		var nome = prompt("Escreva o nome completo do ALUNO que voce deseja gerar o certificado");
+		var cargaHoraria = prompt("Escreva a carga horária do curso EM NUMERAL que voce deseja gerar o certificado");
+		var dataInicio = prompt("Qual a data que o curso deu inicio? Coloque assim: 10/10/2010");
+		var dataFim = prompt("Qual a data que o curso se encerra? Coloque assim: 10/10/2010");
+		var instrutor1 = prompt("Qual o nome do Instrutor Principal?");
+		var instrutor2 = prompt("Qual o nome do Instrutor Secundário?");
+	</script>
+</head>
+<body class="certificado">
+	<div class="container">
+  	<a href="#" class="curso-destaque multi">
+    <hr class="short">
+    <h4>Certificado de conclusão do curso de</h4>
+    <h3>
+	    <script>
+		document.write(curso);
+	    </script>
+    </h3>
+    <hr>
+    <br>
+    <h4>Conhecimentos adquiridos:</h4>
+    <span class="tag curso">Dev</span>
+    <span class="tag curso">MySQL</span>
+    <span class="tag curso">HTML</span>
+    <hr>
+  </a>
+</div>
+<div class="container dados_aluno">
+	<div class="">
+		<h4>O aluno:</h4>
+        <h3>
+	    <script>
+		document.write(nome);
+	    </script>
+    </h3>
+    <h4>Concluiu o curso com carga horária estimada em <script>document.write(cargaHoraria);</script> horas, com início em <script>document.write(dataInicio);</script> e concluído em <script>document.write(dataFim);</script>.<h4>
+	</div>
+</div>
+<div class="container rodape">
+	<div class="colunas instrutor">
+		<img class="assinatura" src="assinatura.png">
+		<hr class="separador">
+		<h4 class="titulo">Instrutor</h4>
+		<h3 class="nome"><script>document.write(instrutor1);</script></h3>
+	</div>
+	<div class="colunas instrutor">
+		<img class="assinatura" src="assinatura2.png">
+		<hr class="separador">
+		<h4 class="titulo">Instrutor</h4>
+		<h3 class="nome"><script>document.write(instrutor2);</script></h3>
+	</div>
+	<div class="colunas instrutor">
+
+	</div>
+	<div class="colunas instrutor">
+		<img class="assinatura" src="assinaturas3.png">
+		<hr class="separador">
+		<h4 class="titulo">CEO da Superlógica</h4>
+		<h3 class="nome">Carlos H. Cêra</h3>
+	</div>
+</div>
+<div class="container encerramento">
+	<p>www.superlogica.com</p>
+</div>
+</body>
+</html>
